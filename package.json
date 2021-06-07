@@ -1,6 +1,6 @@
 {
   "name": "hms_push_notification",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Haewei Push notification for ios and android with nodejs",
   "main": "index.js",
   "scripts": {

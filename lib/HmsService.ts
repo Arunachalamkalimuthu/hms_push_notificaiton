@@ -29,7 +29,7 @@ class HmsService implements IHmsService {
         const accessTokenRes: any = await this.getAccessToken(config.clientId, config.appSecret);
         try {
 
-            axios.post('https://push-api.cloud.huawei.com/v2/736430079244911188/messages:send',
+            axios.post(`https://push-api.cloud.huawei.com/v2/${config.projectId}/messages:send`,
                 {
                     'message': message,
                     'validate_only': false,
@@ -39,11 +39,9 @@ class HmsService implements IHmsService {
                         "Authorization": `Bearer ${accessTokenRes.access_token}`,
                     }
                 }).then(function (response) {
-                console.log(response)
                 return response;
             });
         } catch (error) {
-            console.log(error);
             return error
 
         }
