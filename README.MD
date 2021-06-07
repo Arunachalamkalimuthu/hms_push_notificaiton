@@ -7,6 +7,19 @@ Via [npm][1]:
 
     $ npm install hms_push_notification
 
+
+
+## Guide
+
+hms_push_notification allows you to use HTTPS to access its server and send uplink messages and downlink messages. This section describes the downlink messaging.
+
+The following figure shows the HTTPS-based downlink messaging process.
+
+
+
+![alt text](https://github.com/arunabimanyu7/hms_push_notificaiton/blob/master/guide/flowchart.png?raw=true)
+
+
 ## Usage
 
     var hmsService = require('hms_push_notification');
@@ -35,15 +48,6 @@ Via [npm][1]:
 
 
 
-
-
-## Guide
-
-hms_push_notification allows you to use HTTPS to access its server and send uplink messages and downlink messages. This section describes the downlink messaging.
-
-The following figure shows the HTTPS-based downlink messaging process.
-
-![alt text](http://url/to/img.png)
 
 
 
