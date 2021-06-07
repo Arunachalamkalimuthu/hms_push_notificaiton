@@ -1,7 +1,7 @@
 import axios from 'axios';
 import querystring from 'querystring';
 import {IHmsService} from './IHmsService';
-import config from './Config';
+
 
 class HmsService implements IHmsService {
 
@@ -25,7 +25,17 @@ class HmsService implements IHmsService {
         }
     }
 
-    async sendPushNotification(message: any): Promise<any> {
+    async sendPushNotification(config: any, message: any): Promise<any> {
+        if (!config.clientId) {
+            throw Error('Please provide the clientId');
+        }
+        if (!config.appSecret) {
+            throw Error('Please provide the appSecret');
+        }
+
+        if (!config.projectId) {
+            throw Error('Please provide the projectId');
+        }
         const accessTokenRes: any = await this.getAccessToken(config.clientId, config.appSecret);
         try {
 
