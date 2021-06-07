@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es2016",
+    "preserveSymlinks": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "allowJs": true,
+    "paths": {
+      "*": ["*"],
+      "@lib/*": ["lib/*"]
+    },
+    "typeRoots": ["node_modules/@types", "./typings"],
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "lib": ["esnext"],
+    "types": ["node", "jest"]
+  },
+  "include": ["lib/**/*"],
+  "exclude": ["dist/**", "node_modules", "**/*.test.ts", "src/client/setupEnzyme.ts"]
+}
