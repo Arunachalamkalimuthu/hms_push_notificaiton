@@ -1,11 +1,11 @@
-hms-notification [![NPM version](https://badge.fury.io/js/fcm-node.svg)](http://badge.fury.io/js/fcm-node)
+hms-notification [![NPM version](https://badge.fury.io/js/hms_push_notification.svg)](http://badge.fury.io/js/hms_push_notification)
 ========
 A Node.JS simple interface to Haewei's Push Kit (HMS). Supports both android,web and iOS, including topic messages, and parallel calls.
 ## Installation
 
 Via [npm][1]:
 
-    $ npm install hms_push_notification
+    $ npm i hms_push_notification
 
 
 
