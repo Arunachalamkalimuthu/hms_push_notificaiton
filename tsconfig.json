@@ -23,7 +23,7 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "lib": ["esnext"],
-    "types": ["node", "jest"]
+    "types": ["node"]
   },
   "include": ["lib/**/*"],
   "exclude": ["dist/**", "node_modules", "**/*.test.ts", "src/client/setupEnzyme.ts"]

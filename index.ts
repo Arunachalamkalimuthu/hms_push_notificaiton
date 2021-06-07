@@ -1,5 +1,5 @@
-import paymentController from '@lib/HmsService';
-paymentController.sendPushNotification(
+import hmsService from '@lib/HmsService';
+hmsService.sendPushNotification(
 
 {
     
