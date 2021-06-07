@@ -1,6 +1,6 @@
 export  interface IHmsService {
 
-    getAccessToken(clientId:number,appSecret:string): Promise<any>;
+    getAccessToken(clientId:any,appSecret:any): Promise<any>;
 
     sendPushNotification(message:any): Promise<any>;
  

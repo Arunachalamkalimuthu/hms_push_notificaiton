@@ -1,10 +1,11 @@
 import axios from 'axios';
 import querystring from 'querystring';
 import {IHmsService} from './IHmsService';
+import config from './Config';
 
 class HmsService implements IHmsService {
 
-    async getAccessToken(clientId: number, appSecret: string): Promise<any> {
+    async getAccessToken(clientId: any, appSecret: any): Promise<any> {
         try {
             const {data} = await axios.post('https://oauth-login.cloud.huawei.com/oauth2/v3/token',
                 querystring.stringify({
@@ -25,7 +26,7 @@ class HmsService implements IHmsService {
     }
 
     async sendPushNotification(message: any): Promise<any> {
-        const accessTokenRes: any = await this.getAccessToken(104288077, 'b3dd48e9c77c9f2daeddecf8e4d5f5c103672b13f008581555268a379b868b0e');
+        const accessTokenRes: any = await this.getAccessToken(config.clientId, config.appSecret);
         try {
 
             axios.post('https://push-api.cloud.huawei.com/v2/736430079244911188/messages:send',
@@ -43,14 +44,10 @@ class HmsService implements IHmsService {
             });
         } catch (error) {
             console.log(error);
-
             return error
 
         }
-
     }
-
-
 }
 
 export default new HmsService();

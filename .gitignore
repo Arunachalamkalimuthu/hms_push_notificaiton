@@ -1,0 +1,53 @@
+# Distribution / packaging
+**/.Python
+**/env/
+**/build/
+**/develop-eggs/
+**/dist/
+**/downloads/
+**/eggs/
+**/.eggs/
+# **/lib/
+**/lib64/
+**/parts/
+**/sdist/
+**/var/
+**/*.egg-info/
+**/.installed.cfg
+**/*.egg
+**/*.pyc
+# **/*.gitlab
+
+# package directories
+**/node_modules
+**/jspm_packages
+
+# Serverless directories
+**/.serverless
+
+# Code editor configs
+.idea
+.vscode
+
+# NPM
+**/npm-debug.log
+.npmrc
+
+# YARN
+**/yarn-error.log
+
+*.csv
+
+.DS_Store
+.env
+
+poc.js
+#Database
+*.sql
+
+# logging
+all-logs.log
+
+# windows settings
+**.vs
+**./routes/.vs
